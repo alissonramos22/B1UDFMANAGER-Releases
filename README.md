@@ -46,5 +46,4 @@ Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 Desenvolvido por **Somar Exp**.  
 Em caso de dúvidas, relatar problemas ou solicitar novas licenças:
-- **Repositório Principal**: [alissonramos22/B1UDFMANAGER](https://github.com/alissonramos22/B1UDFMANAGER)
 - **Suporte**: Entre em contato com a equipe Somar Exp.
