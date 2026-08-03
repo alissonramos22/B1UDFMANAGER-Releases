@@ -9,7 +9,7 @@ Repositório oficial para distribuição e download dos executáveis compilados 
 Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 1. Acesse a área de **[Releases / Lançamentos](https://github.com/alissonramos22/B1UDFMANAGER-Releases/releases)**.
-2. Baixe o executável da versão mais recente (ex: `SAP B1 UDF Manager 1.3.1-hf1.exe`).
+2. Baixe o executável da versão mais recente (ex: `SAP B1 UDF Manager 1.3.2.exe`).
 3. O aplicativo é **Portable** — basta dar um duplo clique para iniciar, sem necessidade de instalação complexa ou privilégios de administrador.
 
 ---
@@ -31,7 +31,7 @@ Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 | Versão | Data de Lançamento | Tipo | Destaques |
 | :--- | :---: | :---: | :--- |
-| **v1.3.1-hf1** | 03/08/2026 | **Estável / Hotfix** | Correções no filtro de busca anti-null, ajuste na criação de UDFs em UDTs existentes, normalização de prefixo @ e escopo de EditSize. |
+| **v1.3.2** | 03/08/2026 | **Estável** | Correções no filtro de busca anti-null, ajuste na criação de UDFs em UDTs existentes, normalização de prefixo @ e escopo de EditSize. |
 | **v1.3.1** | 30/07/2026 | Estável | Auto-criação de UDTs no Destino, Suporte a UDOs, Filtro em Tempo Real, Seleção em Árvore, Alocação Dinâmica de Portas e Splash Screen 0-100%. |
 | **v1.3.0** | 24/07/2026 | Estável | Licenciamento Supabase, Trava por Dispositivo, Tolerância Offline 48h e Atualizações Automáticas. |
 | **v1.2.1** | 23/07/2026 | Estável | Melhorias no comparador de replicação e logs de auditoria. |
