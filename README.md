@@ -9,7 +9,7 @@ Repositório oficial para distribuição e download dos executáveis compilados 
 Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 1. Acesse a área de **[Releases / Lançamentos](https://github.com/alissonramos22/B1UDFMANAGER-Releases/releases)**.
-2. Baixe o executável da versão mais recente (ex: `SAP B1 UDF Manager 1.3.2.exe`).
+2. Baixe o executável da versão mais recente (ex: `SAP B1 UDF Manager 1.3.3.exe`).
 3. O aplicativo é **Portable** — basta dar um duplo clique para iniciar, sem necessidade de instalação complexa ou privilégios de administrador.
 
 ---
@@ -17,11 +17,12 @@ Para baixar o aplicativo pronto para uso em ambiente Windows:
 ## 📌 Principais Recursos do SAP B1 UDF Manager
 
 - **🛠️ Criador e Importador de Metadados**: Criação de Tabelas de Usuário (UDT) e Campos Customizados (UDF) com suporte a Valores Válidos, Tabelas do Sistema e Objetos de Usuário (UDO).
-- **🔄 Replicação Multi-Base Inteligente**: Comparação de metadados em tempo real entre bases de dados (*Homologação ➔ Produção*), criação automática de UDTs no destino, filtro por palavra-chave e interrupção em 1 clique.
+- **🔄 Replicação Multi-Base Inteligente**: Comparação de metadados em tempo real entre bases de dados (*Homologação ➔ Produção*), criação automática de UDTs no destino, filtro por palavra-chave, interrupção em 1 clique e replicação encadeada de dependências.
+- **🌐 Gerenciador de Perfis de Conexão**: Cadastro e reuso unificado de ambientes alvo (URLs, bases e credenciais).
+- **⚡ Resiliência Service Layer (Retry Interceptor)**: Re-tentativas automáticas contra erros transitórios 502/503/504 em instabilidades do proxy/load balancer da SAP.
 - **🌳 Seleção Hierárquica em Árvore**: Controle bidirecional de seleção de tabelas e campos na comparação (Pai/Filhos).
-- **⚡ Alocação Dinâmica de Portas Livres**: Sistema inteligente de Proxy que detecta e aloca automaticamente a próxima porta livre (`3000 -> 3001`), evitando conflitos no cliente.
 - **🎨 Splash Screen Interativa & Trava de Instância Única**: Tela de carregamento com progresso de `0%` a `100%` e trava de processo único (`Single Instance Lock`) que foca a janela ativa.
-- **📑 Audit Log Técnico**: Registro e histórico completo de transações formatado em PDF (A4 Retrato) para auditorias.
+- **📑 Audit Log Técnico**: Registro e histórico completo de transações diretas e em cascata espelhados no SAP B1 (`@SE_UDFMAN_LOGS`).
 - **🛡️ Licenciamento & Sessão Única**: Controle de acesso via Supabase Auth por dispositivo único com tolerância offline de até 48 horas.
 - **🤖 Treinamento Guiado Interativo**: Tour dinâmico que ensina a utilizar cada recurso direto na interface.
 
@@ -31,7 +32,8 @@ Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 | Versão | Data de Lançamento | Tipo | Destaques |
 | :--- | :---: | :---: | :--- |
-| **v1.3.2** | 03/08/2026 | **Estável** | Correções no filtro de busca anti-null, ajuste na criação de UDFs em UDTs existentes, normalização de prefixo @ e escopo de EditSize. |
+| **v1.3.3** | 07/08/2026 | **Estável** | Refatoração modular da Replicação, Gerenciador Unificado de Conexões, Detecção de Divergência de Vínculos/Descrição, Retry Automático Proxy 502/503/504, Replicação Encadeada de Dependências e Audit Log Completo. |
+| **v1.3.2** | 03/08/2026 | Estável | Correções no filtro de busca anti-null, ajuste na criação de UDFs em UDTs existentes, normalização de prefixo @ e escopo de EditSize. |
 | **v1.3.1** | 30/07/2026 | Estável | Auto-criação de UDTs no Destino, Suporte a UDOs, Filtro em Tempo Real, Seleção em Árvore, Alocação Dinâmica de Portas e Splash Screen 0-100%. |
 | **v1.3.0** | 24/07/2026 | Estável | Licenciamento Supabase, Trava por Dispositivo, Tolerância Offline 48h e Atualizações Automáticas. |
 | **v1.2.1** | 23/07/2026 | Estável | Melhorias no comparador de replicação e logs de auditoria. |
