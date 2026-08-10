@@ -32,7 +32,8 @@ Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 | Versão | Data de Lançamento | Tipo | Destaques |
 | :--- | :---: | :---: | :--- |
-| **v1.3.3** | 07/08/2026 | **Estável** | Refatoração modular da Replicação, Gerenciador Unificado de Conexões, Detecção de Divergência de Vínculos/Descrição, Retry Automático Proxy 502/503/504, Replicação Encadeada de Dependências e Audit Log Completo. |
+| **v1.3.4** | 10/08/2026 | **Estável** | Centralização modular no ReplicationService, Seleção inteligente Pai/Filhos no Comparador, Pré-criação de UDTs no destino, Tabela @SE_UDFMAN_LOGS em destinos, Eliminação em tempo real de itens sincronizados e Trava estrita de 15 dias em Licenças Trial. |
+| **v1.3.3** | 07/08/2026 | Estável | Refatoração modular da Replicação, Gerenciador Unificado de Conexões, Detecção de Divergência de Vínculos/Descrição, Retry Automático Proxy 502/503/504, Replicação Encadeada de Dependências e Audit Log Completo. |
 | **v1.3.2** | 03/08/2026 | Estável | Correções no filtro de busca anti-null, ajuste na criação de UDFs em UDTs existentes, normalização de prefixo @ e escopo de EditSize. |
 | **v1.3.1** | 30/07/2026 | Estável | Auto-criação de UDTs no Destino, Suporte a UDOs, Filtro em Tempo Real, Seleção em Árvore, Alocação Dinâmica de Portas e Splash Screen 0-100%. |
 | **v1.3.0** | 24/07/2026 | Estável | Licenciamento Supabase, Trava por Dispositivo, Tolerância Offline 48h e Atualizações Automáticas. |
