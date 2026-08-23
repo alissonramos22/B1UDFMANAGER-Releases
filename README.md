@@ -9,22 +9,24 @@ Repositório oficial para distribuição e download dos executáveis compilados 
 Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 1. Acesse a área de **[Releases / Lançamentos](https://github.com/alissonramos22/B1UDFMANAGER-Releases/releases)**.
-2. Baixe o executável da versão mais recente (ex: `SAP B1 UDF Manager 1.3.3.exe`).
+2. Baixe o executável da versão mais recente (ex: `SAP B1 UDF Manager 1.4.0.exe`).
 3. O aplicativo é **Portable** — basta dar um duplo clique para iniciar, sem necessidade de instalação complexa ou privilégios de administrador.
 
 ---
 
 ## 📌 Principais Recursos do SAP B1 UDF Manager
 
-- **🛠️ Criador e Importador de Metadados**: Criação de Tabelas de Usuário (UDT) e Campos Customizados (UDF) com suporte a Valores Válidos, Tabelas do Sistema e Objetos de Usuário (UDO).
-- **🔄 Replicação Multi-Base Inteligente**: Comparação de metadados em tempo real entre bases de dados (*Homologação ➔ Produção*), criação automática de UDTs no destino, filtro por palavra-chave, interrupção em 1 clique e replicação encadeada de dependências.
-- **🌐 Gerenciador de Perfis de Conexão**: Cadastro e reuso unificado de ambientes alvo (URLs, bases e credenciais).
-- **⚡ Resiliência Service Layer (Retry Interceptor)**: Re-tentativas automáticas contra erros transitórios 502/503/504 em instabilidades do proxy/load balancer da SAP.
-- **🌳 Seleção Hierárquica em Árvore**: Controle bidirecional de seleção de tabelas e campos na comparação (Pai/Filhos).
-- **🎨 Splash Screen Interativa & Trava de Instância Única**: Tela de carregamento com progresso de `0%` a `100%` e trava de processo único (`Single Instance Lock`) que foca a janela ativa.
-- **📑 Audit Log Técnico**: Registro e histórico completo de transações diretas e em cascata espelhados no SAP B1 (`@SE_UDFMAN_LOGS`).
-- **🛡️ Licenciamento & Sessão Única**: Controle de acesso via Supabase Auth por dispositivo único com tolerância offline de até 48 horas.
-- **🤖 Treinamento Guiado Interativo**: Tour dinâmico que ensina a utilizar cada recurso direto na interface.
+- **🧩 Gestão Completa de UDOs (User-Defined Objects)**: Módulo totalmente redesenhado para gerenciar objetos *Master Data* e *Document*, tabelas filhas (*ChildTables*), colunas de busca/formulário e busca em tempo real de Menus Pai.
+- **🔄 Replicação e Comparação Integrada de UDOs**: Comparador inteligente com replicação em cascata de UDOs (criação automática de UDTs pai/filhas, UDFs pertencentes e ativação do UDO no destino).
+- **📤 Exportação de Metadados com Carrinho (Basket)**: Busca em árvore de tabelas nativas e UDTs com exportação em lote para **Excel (`.xlsx`)**, `.csv`, `.txt` e `.json`.
+- **📥 Carga em Massa & Download de Modelos**: Upload de planilhas com visualização hierárquica em árvore (*Tree View*) e botões para download de modelos oficiais padronizados.
+- **🏢 Licenciamento Corporativo por Domínio**: Validação segura por Código OTP de 6 a 8 dígitos via e-mail e gestão de limites de usuários ativos.
+- **🔒 Isolamento Total de Dados (Multi-Tenant Local)**: Perfis de conexão, credenciais SAP e logs 100% isolados por conta de usuário na mesma máquina.
+- **⚡ MultiButton com Presets Rápidos**: Criação manual imediata de campos (Texto, Numérico, Quantidade, Preço, Data, Memo) no Criador de Estruturas.
+- **📊 Contador em Tempo Real no Comparador**: Leitura contínua bloco a bloco de UDTs/UDFs com card visual dinâmico.
+- **☁️ Sincronização em Nuvem de Perfis (AES-256)**: Backup criptografado ponta a ponta de conexões no Supabase.
+- **⚡ Resiliência Service Layer (Retry Interceptor)**: Re-tentativas automáticas contra erros transitórios 502/503/504 em instabilidades da Service Layer.
+- **📑 Audit Log Técnico**: Registro e histórico de transações diretas e em cascata gravados no SAP B1 (`@SE_UDFMAN_LOGS`).
 
 ---
 
@@ -32,7 +34,8 @@ Para baixar o aplicativo pronto para uso em ambiente Windows:
 
 | Versão | Data de Lançamento | Tipo | Destaques |
 | :--- | :---: | :---: | :--- |
-| **v1.3.4** | 10/08/2026 | **Estável** | Centralização modular no ReplicationService, Seleção inteligente Pai/Filhos no Comparador, Pré-criação de UDTs no destino, Tabela @SE_UDFMAN_LOGS em destinos, Eliminação em tempo real de itens sincronizados e Trava estrita de 15 dias em Licenças Trial. |
+| **v1.4.0** | 23/08/2026 | **Estável** | Gestão Completa e Replicação em Cascata de UDOs, Exportação em Excel (.xlsx)/CSV com Carrinho (Basket), Carga em Massa via Árvore (Tree View) e Modelos Oficiais, Licenciamento Corporativo por Domínio (OTP), Isolamento Multi-Tenant Local, MultiButton de Presets Rápidos, Contador em Tempo Real na Comparação e Backup em Nuvem AES-256. |
+| **v1.3.4** | 10/08/2026 | Estável | Centralização modular no ReplicationService, Seleção inteligente Pai/Filhos no Comparador, Pré-criação de UDTs no destino, Tabela @SE_UDFMAN_LOGS em destinos, Eliminação em tempo real de itens sincronizados e Trava estrita de 15 dias em Licenças Trial. |
 | **v1.3.3** | 07/08/2026 | Estável | Refatoração modular da Replicação, Gerenciador Unificado de Conexões, Detecção de Divergência de Vínculos/Descrição, Retry Automático Proxy 502/503/504, Replicação Encadeada de Dependências e Audit Log Completo. |
 | **v1.3.2** | 03/08/2026 | Estável | Correções no filtro de busca anti-null, ajuste na criação de UDFs em UDTs existentes, normalização de prefixo @ e escopo de EditSize. |
 | **v1.3.1** | 30/07/2026 | Estável | Auto-criação de UDTs no Destino, Suporte a UDOs, Filtro em Tempo Real, Seleção em Árvore, Alocação Dinâmica de Portas e Splash Screen 0-100%. |
